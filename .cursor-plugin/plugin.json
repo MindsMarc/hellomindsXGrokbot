@@ -1,0 +1,18 @@
+{
+  "name": "hellominds",
+  "version": "0.1.0",
+  "description": "Use the Minds CLI from Grok Bot: discover Minds, chat, inspect cognition, browse Bazaar, and manage Minds.",
+  "author": { "name": "HelloMinds" },
+  "logo": "assets/logo.png",
+  "keywords": ["hellominds", "minds", "builder", "cli"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "MINDS_BUILDER_API_KEY": {
+        "type": "string",
+        "title": "HelloMinds Builder API key",
+        "description": "Configure securely in the host. Required for account operations; public Bazaar and name checks work without it."
+      }
+    }
+  }
+}

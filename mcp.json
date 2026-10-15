@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "hellominds": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/server/stdio.mjs"],
+      "env": { "MINDS_BUILDER_API_KEY": "${MINDS_BUILDER_API_KEY}" }
+    }
+  }
+}
