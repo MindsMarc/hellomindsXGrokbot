@@ -81,13 +81,3 @@ node --test test/*.test.mjs
 ```
 
 Tests exercise argument compilation, secret handling, attachment cleanup, events, error recovery, and MCP initialization/discovery/calls over a real stdio subprocess. Authenticated API operations use an offline child-process fixture in the automated suite. These tests are not evidence of live account access.
-
-On 15 October 2026, all 10 automated tests and usage-skill validation passed. Separate smoke checks invoked the published CLI through this wrapper without credentials: root help succeeded and a Bazaar app search for Notion returned one real catalogue item. No authenticated command or Grok Bot installation was tested.
-
-Before marketplace submission, install in Grok Bot and test with an authorized disposable account: configure the key, list Minds, select an existing Mind, create/inspect an alias, send once, receive a real reply, inspect usage, and revoke the key. Exercise management mutations only when explicitly authorized. Record exact versions and outcomes. Do not attest that local and in-app testing passed until both have evidence.
-
-## Publishing
-
-Not published or installed by this work. For marketplace submission, this repository must be public. A publisher also needs a hosted square logo URL, contact details, and in-app testing instructions/evidence. An MCP server URL is unnecessary for this local stdio implementation if submitting the public repository. Select Grok Bot on the [submission form](https://x.ai/bot/marketplace/submit-a-plugin).
-
-Packaging references: [Cursor plugins](https://cursor.com/docs/reference/plugins) and [MCP stdio transport](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports#stdio).
