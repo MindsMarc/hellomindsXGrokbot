@@ -25,13 +25,13 @@ Alternatively, register a custom stdio MCP server in a compatible host. For a st
   "mcpServers": {
     "hellominds": {
       "command": "node",
-      "args": ["/absolute/path/hellomindsXGrokbot/server/stdio.mjs"]
+      "args": ["/path/to/hellominds-plugin/server/stdio.mjs"]
     }
   }
 }
 ```
 
-Use your host's secure environment configuration to supply `MINDS_BUILDER_API_KEY` to that process. The absolute path is checkout-specific; update it if copying the plugin elsewhere. A custom MCP-only registration provides tools; install the accompanying usage skill through the host if desired.
+Use your host's secure environment configuration to supply `MINDS_BUILDER_API_KEY` to that process. Replace `/path/to/hellominds-plugin` with the absolute path to your cloned or installed plugin directory. A custom MCP-only registration provides tools; install the accompanying usage skill through the host if desired.
 
 Public Bazaar, name checks, and help work without an account key. Account tools fail clearly when the key is missing. The wrapper runs each CLI command in a fresh temporary directory, so a repository `.env` file is not implicitly consumed.
 
